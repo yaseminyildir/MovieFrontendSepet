@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImdbMovie</title>
+    <!--Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Movie Create</h2>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <label>Movie Title</label>
+                            <input type="text" class="form-control" id="movieTitle" />
+                        </div>
+                        <div>
+                            <label>Description</label>
+                            <input type="text" class="form-control" id="description" />
+                        </div>
+                        
+                        <button class="btn btn-primary" id="create">Create</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+               <div class="card">
+                   <div class="card-header">
+                       <h2>Movie List</h2>
+                   </div>
+                   <div class="card-body">
+                       <table class="table table-hover">
+                           <thead>
+                               <tr>
+                                   <th>ID</th>
+                                   <th>Movie Title</th>
+                                   <th>Description</th>
+                                   
+                                   <th>
+
+                                   </th>
+                               </tr>
+                           </thead>
+                           <tbody id="movieTableBody">
+                            
+                           </tbody>
+                       </table>
+                       
+                   </div>
+               </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Sepet Özet</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group" id="cartItems">
+                            <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                                A list item
+                                <span class="badge bg-primary rounded-pill">14</span>
+                            </li> -->
+                        </ul>
+            
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <h3>Toplam Tutar: </h3>
+                            <h3 id="totalPrice">0 TL</h3>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <button class="btn btn-primary mt-3 ">Tamamla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--Bs Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Movie Js-->
+    <script src="/js/movie.js"></script>
+</body>
+</html>
